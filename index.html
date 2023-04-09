@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Css links -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Oxum's Fortune</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-12 col-sm-12 col-12 p-0">
+            <div class="right_nav">
+              <div class="logo_div">
+                <a href="./" class="logo">
+                  <img src="./images/logo.png" alt="" />
+                </a>
+              </div>
+              <div class="nav_btns">
+                <a href="javascript: void(0);" class="home a_btn"
+                  ><img src="./images/home.png" alt=""
+                /></a>
+                <div class="dropdown">
+                  <button
+                    class="a_btn games dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <img src="./images/joystick.png" alt="" />Games
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">Game 1</a>
+                    <a class="dropdown-item" href="#">Game 2</a>
+                    <a class="dropdown-item" href="#">Game 3</a>
+                  </div>
+                </div>
+                <a href="javascript: void(0);" class="rewards a_btn"
+                  ><img src="./images/gift.png" alt="" />Rewards</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+            <div class="navigation">
+              <nav>
+                <ul class="nav_menu">
+                  <li><a href="javascript:void(0);">Leaderboard</a></li>
+                  <li><a href="javascript:void(0);">Affiliates</a></li>
+                  <li><a href="javascript:void(0);">Fairness</a></li>
+                  <li><a href="javascript:void(0);">FAQ</a></li>
+                  <li><a href="javascript:void(0);">Free to play</a></li>
+                  <li><a href="javascript:void(0);">Game Responsibly</a></li>
+                </ul>
+              </nav>
+              <div class="menu_options">
+                <a href="javascript:void(0);" class="search"
+                  ><img src="./images/search.png" alt=""
+                /></a>
+                <a href="javascript:void(0);" class="notifications"
+                  ><img src="./images/bell.png" alt=""
+                /></a>
+                <a href="javascript:void(0);" class="settings"
+                  ><img src="./images/gear.png" alt=""
+                /></a>
+                <a href="javascript:void(0);" class="login"
+                  ><span
+                    ><img src="./images/sign-in.png" alt="" />
+                    <p class="m-0">Sign in</p></span
+                  >
+                  <img src="./images/avatar.png" class="user_pic" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main-Content -->
+
+    <div class="container-fluid w-100 p-0">
+      <div class="row">
+        <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+          <div class="chats_sec">
+            <div class="chat_head">
+              <div
+                class="chat_rules d-flex align-items-center justify-content-between px-2"
+              >
+                <h6 class="mb-0">Chat Rules</h6>
+                <div class="socials">
+                  <p class="mb-0">
+                    socials:
+                    <a href="javascript:void(0);"
+                      ><img src="./images/facebook.png" alt=""
+                    /></a>
+                    <a href="javascript:void(0);"
+                      ><img src="./images/twitter.png" alt=""
+                    /></a>
+                  </p>
+                </div>
+              </div>
+              <div class="country_box">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-primary btn-lg dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span class="d-flex align-items-center">
+                      <span class="flag-icon flag-icon-us me-1"></span>
+                      <span>English</span>
+                    </span>
+                    <span class="online_users">123</span>
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item active" href="#"
+                        ><span class="flag-icon flag-icon-us me-1"></span>
+                        <span>English</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><span class="flag-icon flag-icon-fr me-1"></span>
+                        <span>French</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><span class="flag-icon flag-icon-es me-1"></span>
+                        <span>Spanich</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><span class="flag-icon flag-icon-sa me-1"></span>
+                        <span>Arabic</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="chat_users">
+              <div class="chat_user">
+                <div class="user_img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="user_details">
+                  <p class="user_info mb-0">
+                    User name
+                    <span class="user_game"> Counter-Strike... </span>
+                  </p>
+                </div>
+                <div class="user_earn">
+                  <p class="m-0">25.7k</p>
+                </div>
+              </div>
+              <div class="chat_user">
+                <div class="user_img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="user_details">
+                  <p class="user_info mb-0">
+                    User name
+                    <span class="user_game"> Counter-Strike... </span>
+                  </p>
+                </div>
+                <div class="user_earn">
+                  <p class="m-0">25.7k</p>
+                </div>
+              </div>
+              <div class="chat_user">
+                <div class="user_img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="user_details">
+                  <p class="user_info mb-0">
+                    User name
+                    <span class="user_game"> Counter-Strike... </span>
+                  </p>
+                </div>
+                <div class="user_earn">
+                  <p class="m-0">25.7k</p>
+                </div>
+              </div>
+              <div class="chat_user">
+                <div class="user_img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="user_details">
+                  <p class="user_info mb-0">
+                    User name
+                    <span class="user_game"> Counter-Strike... </span>
+                  </p>
+                </div>
+                <div class="user_earn">
+                  <p class="m-0">25.7k</p>
+                </div>
+              </div>
+              <div class="chat_user">
+                <div class="user_img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="user_details">
+                  <p class="user_info mb-0">
+                    User name
+                    <span class="user_game"> Counter-Strike... </span>
+                  </p>
+                </div>
+                <div class="user_earn">
+                  <p class="m-0">25.7k</p>
+                </div>
+              </div>
+              <div class="chat_user">
+                <div class="user_img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="user_details">
+                  <p class="user_info mb-0">
+                    User name
+                    <span class="user_game"> Counter-Strike... </span>
+                  </p>
+                </div>
+                <div class="user_earn">
+                  <p class="m-0">25.7k</p>
+                </div>
+              </div>
+              <div class="chat_user">
+                <div class="user_img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="user_details">
+                  <p class="user_info mb-0">
+                    User name
+                    <span class="user_game"> Counter-Strike... </span>
+                  </p>
+                </div>
+                <div class="user_earn">
+                  <p class="m-0">25.7k</p>
+                </div>
+              </div>
+              <div class="chat_user">
+                <div class="user_img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="user_details">
+                  <p class="user_info mb-0">
+                    User name
+                    <span class="user_game"> Counter-Strike... </span>
+                  </p>
+                </div>
+                <div class="user_earn">
+                  <p class="m-0">25.7k</p>
+                </div>
+              </div>
+              <div class="chat_user">
+                <div class="user_img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="user_details">
+                  <p class="user_info mb-0">
+                    User name
+                    <span class="user_game"> Counter-Strike... </span>
+                  </p>
+                </div>
+                <div class="user_earn">
+                  <p class="m-0">25.7k</p>
+                </div>
+              </div>
+              <div class="chat_user">
+                <div class="user_img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="user_details">
+                  <p class="user_info mb-0">
+                    User name
+                    <span class="user_game"> Counter-Strike... </span>
+                  </p>
+                </div>
+                <div class="user_earn">
+                  <p class="m-0">25.7k</p>
+                </div>
+              </div>
+              <div class="chat_user">
+                <div class="user_img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="user_details">
+                  <p class="user_info mb-0">
+                    User name
+                    <span class="user_game"> Counter-Strike... </span>
+                  </p>
+                </div>
+                <div class="user_earn">
+                  <p class="m-0">25.7k</p>
+                </div>
+              </div>
+              <div class="chat_user">
+                <div class="user_img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="user_details">
+                  <p class="user_info mb-0">
+                    User name
+                    <span class="user_game"> Counter-Strike... </span>
+                  </p>
+                </div>
+                <div class="user_earn">
+                  <p class="m-0">25.7k</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_area">
+              <textarea
+                name="chat"
+                id="chatbox"
+                rows="5"
+                placeholder="Type Here.."
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 p-0 col-md-12 col-sm-12 body-content-col">
+          <div class="container-fluid body-content">
+            <div class="offer-sec">
+              <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                  <div class="offer_info d-flex align-items-center">
+                    <div class="game_name mr-2">
+                      <h2 class="rec_head">Rain</h2>
+                    </div>
+                    <div class="offer_counter">
+                      <h5 class="offer-head">Play and earn free money!</h5>
+                      <div class="counter_time">00:27:05</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-1 col-md-4 col-sm-4 p-0">
+                  <div class="live_div">
+                    <p class="m-0 live_text">
+                      <span>LIVE</span>
+                      Rain Pool
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-8 col-sm-8">
+                  <div class="live_info">
+                    <div class="tip_form">
+                      <form action="#">
+                        <div class="tip_input d-flex align-items-center">
+                          <div class="coin">
+                            <img
+                              src="./images/coin.png"
+                              alt="gold_coin"
+                              class="coin_img"
+                            />
+                          </div>
+                          <div class="tip_field">
+                            <input
+                              value="00.00"
+                              type="text"
+                              id="tip"
+                              name="tip"
+                            />
+                          </div>
+                        </div>
+                        <button type="submit" class="p_btn tip_btn">
+                          Tip Rain
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <img src="./images/coins.png" alt="" class="offer_coins" />
+                </div>
+              </div>
+            </div>
+            <div class="banner-sec bg_info">
+              <img src="./images/pandora's-box.png" alt="" class="mines_box" />
+              <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 banner_img_col">
+                  <img src="./images/el1.png" alt="" class="banner-img w-100" />
+                </div>
+                <div
+                  class="col-lg-8 col-md-6 col-sm-12 banner_content text-center"
+                >
+                  <h2 class="banner_head">
+                    <span>Welcome To</span>
+                    OXUM's <br />
+                    Fortune
+                  </h2>
+                  <a
+                    href="javascript: void(0);"
+                    class="p_btn banner_btn d-inline-block"
+                    >Login Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <hr class="divider" />
+            <div class="types">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="type_box">
+                    <img
+                      src="./images/cases.png"
+                      alt="type_img.png"
+                      class="type_img"
+                    />
+                    <div class="type_info">
+                      <div class="type_icon">
+                        <img src="./images/icon.png" alt="" />
+                      </div>
+                      <div class="type_text">
+                        <h4 class="type_title">Cases</h4>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="type_box">
+                    <img
+                      src="./images/upgrader.png"
+                      alt="type_img.png"
+                      class="type_img"
+                    />
+                    <div class="type_info">
+                      <div class="type_icon">
+                        <img src="./images/icon.png" alt="" />
+                      </div>
+                      <div class="type_text">
+                        <h4 class="type_title">upgrader</h4>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="type_box">
+                    <img
+                      src="./images/plinko.png"
+                      alt="type_img.png"
+                      class="type_img"
+                    />
+                    <div class="type_info">
+                      <div class="type_icon">
+                        <img src="./images/icon.png" alt="" />
+                      </div>
+                      <div class="type_text">
+                        <h4 class="type_title">plinko</h4>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="type_box">
+                    <img
+                      src="./images/mines.png"
+                      alt="type_img.png"
+                      class="type_img"
+                    />
+                    <div class="type_info">
+                      <div class="type_icon">
+                        <img src="./images/icon.png" alt="" />
+                      </div>
+                      <div class="type_text">
+                        <h4 class="type_title">mines</h4>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="type_box">
+                    <img
+                      src="./images/coinflip.png"
+                      alt="type_img.png"
+                      class="type_img"
+                    />
+                    <div class="type_info">
+                      <div class="type_icon">
+                        <img src="./images/icon.png" alt="" />
+                      </div>
+                      <div class="type_text">
+                        <h4 class="type_title">coinflip</h4>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="type_box">
+                    <img
+                      src="./images/t7.png"
+                      alt="type_img.png"
+                      class="type_img"
+                    />
+                    <div class="type_info">
+                      <div class="type_icon">
+                        <img src="./images/icon.png" alt="" />
+                      </div>
+                      <div class="type_text">
+                        <h4 class="type_title">coinflip</h4>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rewards">
+              <h2 class="banner_head">
+                <span>Earn rewards</span>
+              </h2>
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 reward_col p-0">
+                  <div class="reward_box text-center">
+                    <h3 class="level_head">Level <span>5</span></h3>
+                    <div class="reward_img">
+                      <img src="./images/level-5-case.png" alt="" />
+                    </div>
+                    <div class="reward_status d-flex align-items-center">
+                      <img src="./images/lock.png" alt="" />
+                      <span>Locked</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 reward_col p-0">
+                  <div class="reward_box text-center">
+                    <h3 class="level_head">Level <span>10</span></h3>
+                    <div class="reward_img">
+                      <img src="./images/level-10-case.png" alt="" />
+                    </div>
+                    <div class="reward_status d-flex align-items-center">
+                      <img src="./images/lock.png" alt="" />
+                      <span>Locked</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 reward_col p-0">
+                  <div class="reward_box text-center">
+                    <h3 class="level_head">Level <span>20</span></h3>
+                    <div class="reward_img">
+                      <img src="./images/level-20-case.png" alt="" />
+                    </div>
+                    <div class="reward_status d-flex align-items-center">
+                      <img src="./images/lock.png" alt="" />
+                      <span>Locked</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 reward_col p-0">
+                  <div class="reward_box text-center">
+                    <h3 class="level_head">Level <span>40</span></h3>
+                    <div class="reward_img">
+                      <img src="./images/level-40-case.png" alt="" />
+                    </div>
+                    <div class="reward_status d-flex align-items-center">
+                      <img src="./images/lock.png" alt="" />
+                      <span>Locked</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 reward_col p-0">
+                  <div class="reward_box text-center">
+                    <h3 class="level_head">Level <span>50</span></h3>
+                    <div class="reward_img">
+                      <img src="./images/level-50-case.png" alt="" />
+                    </div>
+                    <div class="reward_status d-flex align-items-center">
+                      <img src="./images/lock.png" alt="" />
+                      <span>Locked</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 reward_col p-0">
+                  <div class="reward_box text-center">
+                    <h3 class="level_head">Level <span>60</span></h3>
+                    <div class="reward_img">
+                      <img src="./images/level-60-case.png" alt="" />
+                    </div>
+                    <div class="reward_status d-flex align-items-center">
+                      <img src="./images/lock.png" alt="" />
+                      <span>Locked</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 reward_col p-0">
+                  <div class="reward_box text-center">
+                    <h3 class="level_head">Level <span>80</span></h3>
+                    <div class="reward_img">
+                      <img src="./images/level-80-case.png" alt="" />
+                    </div>
+                    <div class="reward_status d-flex align-items-center">
+                      <img src="./images/lock.png" alt="" />
+                      <span>Locked</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 reward_col p-0">
+                  <div class="reward_box text-center">
+                    <h3 class="level_head">Level <span>90</span></h3>
+                    <div class="reward_img">
+                      <img src="./images/level-90-case.png" alt="" />
+                    </div>
+                    <div class="reward_status d-flex align-items-center">
+                      <img src="./images/lock.png" alt="" />
+                      <span>Locked</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+          <div class="accesories">
+            <div class="acc_box">
+              <div class="acc_img">
+                <img src="./images/a1.png" alt="" />
+              </div>
+              <div class="acc_info">
+                <p>
+                  Lorem Ipsum
+                  <span class="price"> 22.53 </span>
+                </p>
+              </div>
+            </div>
+            <div class="acc_box">
+              <div class="acc_img">
+                <img src="./images/a2.png" alt="" />
+              </div>
+              <div class="acc_info">
+                <p>
+                  Lorem Ipsum
+                  <span class="price"> 22.53 </span>
+                </p>
+              </div>
+            </div>
+            <div class="acc_box">
+              <div class="acc_img">
+                <img src="./images/a3.png" alt="" />
+              </div>
+              <div class="acc_info">
+                <p>
+                  Lorem Ipsum
+                  <span class="price"> 22.53 </span>
+                </p>
+              </div>
+            </div>
+            <div class="acc_box">
+              <div class="acc_img">
+                <img src="./images/a4.png" alt="" />
+              </div>
+              <div class="acc_info">
+                <p>
+                  Lorem Ipsum
+                  <span class="price"> 22.53 </span>
+                </p>
+              </div>
+            </div>
+            <div class="acc_box">
+              <div class="acc_img">
+                <img src="./images/a5.png" alt="" />
+              </div>
+              <div class="acc_info">
+                <p>
+                  Lorem Ipsum
+                  <span class="price"> 22.53 </span>
+                </p>
+              </div>
+            </div>
+            <div class="acc_box">
+              <div class="acc_img">
+                <img src="./images/a6.png" alt="" />
+              </div>
+              <div class="acc_info">
+                <p>
+                  Lorem Ipsum
+                  <span class="price"> 22.53 </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-12 p-0">
+            <ul class="foot_menu text-left">
+              <li>
+                <a href="javascript: void(0);"
+                  >© 2023 <span class="copy">Oxum’s Fortune</span></a
+                >
+              </li>
+              <li><a href="javascript: void(0);">Help</a></li>
+              <li><a href="javascript: void(0);">About</a></li>
+              <li><a href="javascript: void(0);">Contact</a></li>
+              <li>
+                <a href="javascript: void(0);"
+                  ><img src="./images/twitter.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript: void(0);"
+                  ><img src="./images/facebook.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-8 col-md-12 col-12 p-0">
+            <ul class="foot_menu text-right">
+              <li><a href="javascript: void(0);">Blog</a></li>
+              <li><a href="javascript: void(0);">Branding</a></li>
+              <li><a href="javascript: void(0);">Store</a></li>
+              <li><a href="javascript: void(0);">Terms Of Service</a></li>
+              <li><a href="javascript: void(0);">Privacy</a></li>
+              <li><a href="javascript: void(0);">How it Works</a></li>
+              <li><a href="javascript: void(0);">Referrals</a></li>
+            </ul>
+            <ul class="foot_menu text-right">
+              <li><a href="javascript: void(0);">UDC 123</a></li>
+              <li><a href="javascript: void(0);">Acceptable Use Policy</a></li>
+              <li><a href="javascript: void(0);">Complaints Policy</a></li>
+              <li>
+                <a href="javascript: void(0);"
+                  >Standard Contract Between Fan and Creator</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script Links -->
+
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/functions.js"></script>
+  </body>
+</html>

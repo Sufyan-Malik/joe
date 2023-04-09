@@ -1,0 +1,763 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: recharge;
+  src: url(../recharge.ttf);
+}
+
+:root {
+  --header-bg: #2b2e35;
+  --blue-glow: #01fffe;
+  --white: #ffffff;
+  --body-bg: #1f2126;
+  --light-gray: #848b8d;
+  --btn-hover: #0297a6;
+  --light-glow: #1e393e;
+  --online: #54c411;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url(../images/body_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Jost", sans-serif;
+}
+
+.bg_info {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.divider {
+  border-color: var(--header-bg);
+}
+
+header {
+  background-color: var(--header-bg);
+  padding: 20px 0;
+  box-shadow: 0 3px 10px #00000021;
+  z-index: 4;
+}
+
+header .right_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .right_nav .logo_div {
+  width: 40%;
+}
+
+header .right_nav .logo_div img {
+  width: 100%;
+}
+
+header .right_nav .nav_btns {
+  width: 60%;
+  display: flex;
+  gap: 5px;
+  margin-left: 18px;
+}
+
+header .right_nav .nav_btns .a_btn:hover {
+  text-decoration: none;
+  color: var(--blue-glow);
+  background-color: var(--btn-hover);
+}
+header .right_nav .nav_btns .a_btn:hover img {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(84%) saturate(6464%)
+    hue-rotate(105deg) brightness(104%) contrast(105%);
+}
+
+header .right_nav .nav_btns .a_btn img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin: 4px;
+  transition: all 0.4s ease-in-out;
+}
+
+header .right_nav .nav_btns .a_btn {
+  font-family: "Jost";
+  color: #848b8d;
+  display: inline-block;
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: var(--body-bg);
+  border: 1px solid transparent;
+  height: fit-content;
+  width: fit-content;
+  transition: all 0.4s ease-in-out;
+}
+
+header .navigation {
+  display: flex;
+  align-items: center;
+}
+
+header .navigation nav {
+  width: 65%;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: var(--white);
+  font-family: "Jost";
+  font-size: 14px;
+}
+
+header nav a {
+  text-decoration: none !important;
+  color: var(--white);
+  transition: all 0.4s ease-in-out;
+}
+
+header nav a:hover {
+  color: var(--blue-glow);
+}
+
+.navigation .menu_options {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .menu_options a {
+  display: inline-block;
+  width: 20px;
+}
+
+header .menu_options a img {
+  width: 100%;
+}
+
+header .menu_options .login {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu_options .login span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 15px;
+  background-color: var(--body-bg);
+  color: #999;
+  margin-right: -10px;
+  border-radius: 50px 0 0 50px;
+  height: 40px;
+}
+
+header .menu_options .login img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid var(--blue-glow);
+}
+header .menu_options .login span img {
+  width: 20px !important;
+  height: 20px !important;
+  object-fit: contain;
+  border: unset;
+  border-radius: 0;
+}
+
+header .menu_options .login span p {
+  font-size: 14px;
+  font-family: "Jost";
+}
+
+.coin_img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.rec_head {
+  font-family: recharge;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+.p_btn {
+  font-family: "Jost", sans-serif;
+  color: #393939;
+  text-decoration: none !important;
+  background-color: var(--blue-glow);
+  border: 2px solid var(--blue-glow);
+  border-radius: 10px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.p_btn:hover {
+  background-color: transparent;
+  color: var(--blue-glow);
+}
+
+.tip_btn {
+  font-size: 16px;
+}
+
+.banner_btn {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.offer-sec {
+  border: 2px dashed var(--blue-glow);
+  border-bottom-style: solid;
+  padding: 15px;
+  position: relative;
+  margin: 20px 0;
+}
+
+.offer_coins {
+  position: absolute;
+  right: 0;
+  top: -25px;
+  width: 150px;
+}
+
+.offer-head {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: var(--white);
+}
+
+.counter_time {
+  font-family: "Jost", sans-serif;
+  color: var(--white);
+  font-weight: 500;
+  padding-left: 22px;
+  position: relative;
+}
+
+.counter_time::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/timer-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.live_text {
+  color: var(--white);
+  font-family: "Jost";
+  text-align: center;
+  font-size: 13px;
+}
+.live_text span {
+  font-size: 30px;
+  font-weight: lighter;
+  display: block;
+}
+
+.tip_form form {
+  display: flex;
+  align-items: center;
+}
+
+.tip_input {
+  padding: 7px;
+  background-color: var(--light-glow);
+  border-radius: 10px;
+  margin: 0 10px;
+  border: 2px dashed var(--blue-glow);
+}
+
+.tip_field input {
+  all: unset;
+  font-family: "Jost";
+  font-size: 18px;
+  text-align: center;
+  padding: 8px 15px;
+  margin-left: 10px;
+  color: var(--white);
+  width: 70px;
+  background-color: var(--body-bg);
+  border-radius: 10px;
+}
+
+.banner-sec {
+  background-image: url(../images/banner1.png);
+  padding: 30px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.mines_box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+}
+
+.banner-sec .banner-img {
+  transform: translateY(50px);
+}
+
+.banner_head {
+  color: var(--white);
+  font-family: "recharge";
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.banner_head span {
+  display: block;
+  color: var(--blue-glow);
+  font-size: 30px;
+}
+
+.types {
+  margin: 40px 0;
+}
+
+.type_box {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.type_box .type_img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.type_box:hover .type_img {
+  transform: scale(1.05);
+}
+
+.type_box .type_info {
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #00000005;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.type_box .type_icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.type_box .type_info {
+  color: var(--white);
+  font-family: "Jost", Sans-serif;
+}
+
+.type_box .type_title {
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+}
+
+.type_box .type_info p {
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.reward_col.p-0 {
+  padding: 10px !important;
+}
+
+.reward_box {
+  padding: 25px 20px;
+  font-family: "Jost";
+  border: 2px solid var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.reward_box:hover {
+  border-color: var(--blue-glow);
+}
+
+.reward_box .reward_img {
+  margin: 5px 0;
+}
+
+.reward_box .reward_img img {
+  width: 80%;
+  height: 150px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.reward_status img {
+  width: 20px;
+}
+
+.reward_status span {
+  color: var(--white);
+  font-size: 18px;
+  display: inline-block;
+  padding: 5px 0 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.reward_box .level_head {
+  color: var(--white);
+  font-size: 24px;
+}
+
+.reward_box .level_head span {
+  color: var(--blue-glow);
+}
+
+.acc_box {
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(../images/gradient_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  border-left: 4px solid var(--blue-glow);
+  margin-bottom: 4px;
+}
+
+.acc_box .acc_img,
+.acc_box .acc_info {
+  width: 50%;
+}
+
+.acc_box .acc_img img {
+  width: 95%;
+}
+
+.acc_box .acc_info {
+  color: var(--white);
+  font-family: "Jost", sans-serif;
+}
+
+.acc_box .acc_info span {
+  padding-left: 22px;
+  display: block;
+  position: relative;
+}
+
+.acc_box .acc_info span::before {
+  content: "";
+  width: 18px;
+  height: 20px;
+  display: block;
+  background-image: url(../images/coin.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+}
+
+.chats_sec {
+  padding: 15px;
+  background-color: var(--header-bg);
+  text-align: center;
+  box-shadow: 0 0 10px #00000021;
+}
+
+.chat_rules {
+  color: var(--white);
+  font-family: "Jost";
+  padding: 10px;
+}
+
+.chat_rules h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.chat_rules .socials p {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.chat_rules .socials a {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.country_box {
+  margin-bottom: 15px;
+}
+
+.country_box button {
+  all: unset;
+  background-color: var(--body-bg) !important;
+  padding: 10px;
+  width: 95%;
+  font-size: 13px;
+  margin: 0 auto;
+  border-radius: 10px;
+  color: var(--white);
+  font-family: "Jost";
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.country_box span.flag-icon {
+  background-size: cover;
+  width: 30px !important;
+  height: 30px !important;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.country_box span.online_users {
+  margin-right: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.country_box span.online_users::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--online);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.country_box .dropdown-toggle::after {
+  position: absolute;
+  right: 0;
+}
+
+.chat_user {
+  display: flex;
+  color: var(--white);
+  text-align: left;
+  justify-content: flex-start;
+  font-size: 14px;
+  gap: 10px;
+  padding: 5px;
+  align-items: center;
+  font-family: "Jost";
+  position: relative;
+}
+
+.chat_user .user_game {
+  color: var(--blue-glow);
+  display: block;
+}
+
+.chat_user .user_earn {
+  font-weight: 300;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#chatbox {
+  all: unset;
+  background-color: var(--body-bg);
+  border-radius: 10px;
+  color: var(--white);
+  font-weight: 300;
+  font-family: "Jost";
+  padding: 10px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: left;
+}
+
+footer {
+  font-family: "Jost";
+  background-color: var(--header-bg);
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+footer .foot_menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+footer .foot_menu.text-right {
+  justify-content: flex-end;
+}
+
+footer .foot_menu li {
+  font-size: 14px;
+  position: relative;
+  padding: 5px 0;
+}
+
+footer .foot_menu li:not(:last-child)::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #999999;
+  position: absolute;
+  right: -11px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+footer .foot_menu a {
+  display: block;
+  color: #999;
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .foot_menu a img {
+  filter: brightness(0) saturate(100%) invert(67%) sepia(0%) saturate(31%)
+    hue-rotate(235deg) brightness(90%) contrast(97%);
+  transition: all 0.3s ease-in-out;
+}
+
+footer .foot_menu .copy {
+  color: var(--white);
+}
+
+footer .foot_menu a:hover {
+  color: var(--blue-glow);
+}
+
+footer .foot_menu a:hover img {
+  filter: unset;
+}
+
+@media screen and (max-width: 768px) {
+  .offer_coins,
+  .mines_box {
+    display: none;
+  }
+
+  .container-fluid.p-0 {
+    padding: 0 15px !important;
+  }
+  header {
+    padding: 20px !important;
+  }
+  header .right_nav .nav_btns {
+    justify-content: flex-end;
+  }
+  header .right_nav .nav_btns a {
+    font-size: 0;
+  }
+  header nav ul,
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .navigation .menu_options {
+    justify-content: space-evenly;
+    order: -1;
+    margin: 15px 0;
+  }
+  .navigation .menu_options,
+  .navigation nav {
+    width: 100% !important;
+  }
+
+  .banner_content {
+    order: -1;
+    padding: 50px 0;
+  }
+
+  .banner_head {
+    font-size: 45px;
+  }
+
+  .tip_form form {
+    justify-content: center;
+  }
+
+  .live_div {
+    margin: 15px 0;
+  }
+
+  footer .foot_menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 10px;
+  }
+  footer .foot_menu li:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .reward_col.p-0 {
+    width: 100%;
+    max-width: 100%;
+    flex: unset;
+  }
+}
